@@ -1,5 +1,6 @@
-import express, { response } from 'express';
+import express from 'express';
 import bodyParser from 'body-parser';
+
 
 
 
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/a', function sayhi(){
     
-    console.log('hi');
+    console.log('hi hehe');
 })
 
 //Server

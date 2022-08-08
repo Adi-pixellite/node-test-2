@@ -287,7 +287,9 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "\\"
+    "test": "",
+    "start": "node dist/app.js",
+    "build" : "tsc"
   },
   "repository": {
     "type": "git",

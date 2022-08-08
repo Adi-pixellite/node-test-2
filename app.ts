@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/a', function sayhi(){
     
-    console.log('hi');
+    console.log('hi yo boii');
 })
 
 //Server

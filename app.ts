@@ -11,9 +11,10 @@ app.use(express.json());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/a', function sayhi(){
-    
+app.get('/a', function sayhi(){  
     console.log('hi yo boii');
+    
+    console.log('hi');
 })
 
 //Server

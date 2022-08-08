@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 
 
@@ -11,10 +11,11 @@ app.use(express.json());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/a', function sayhi(){  
-    console.log('hi yo boii');
-    
-    console.log('hi');
+app.get('/', (req: Request,res: Response)=>{
+    res.send({
+        success: true,
+        data: "Hehe Worked"
+    })
 })
 
 //Server
